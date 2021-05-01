@@ -15,6 +15,7 @@ func TestMatching(t *testing.T) {
 		{"aaaabcabaabba", "ab", []int{3, 6, 9}},
 		{"a", "a", []int{0}},
 		{"a", "b", []int{}},
+		{"abcabceabcabcd", "abcabcd", []int{7}},
 	}
 
 	for _, table := range tables {
