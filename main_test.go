@@ -13,6 +13,8 @@ func TestMatching(t *testing.T) {
 	}{
 		{"hello ello el", "ell", []int{1, 6}},
 		{"aaaabcabaabba", "ab", []int{3, 6, 9}},
+		{"a", "a", []int{0}},
+		{"a", "b", []int{}},
 	}
 
 	for _, table := range tables {
